@@ -5,7 +5,7 @@ import { useGet } from '../../hooks/useGet'
 import dec1 from '../../assets/img/dec/opacity.png'
 
 import { BsArrowLeft, BsFillGridFill } from 'react-icons/bs'
-import { FaList } from 'react-icons/fa'
+import { FaList, FaSlidersH } from 'react-icons/fa'
 import PokemonDetail from '../PokemonDetail/PokemonDetail'
 import './PokemonList.css'
 
@@ -51,6 +51,9 @@ const PokemonList = () => {
     <>
       <div className='container pokemon-list'>
         <img src={dec1} alt='' className='decoration-1' />
+        <div className='decoration-2'>
+          <FaSlidersH />
+        </div>
         <div className='nav'>
           <div className='back-btn btn'>
             <BsArrowLeft />

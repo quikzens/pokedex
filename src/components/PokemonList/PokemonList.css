@@ -84,3 +84,20 @@
   transform: scale(0.5) rotate(180deg);
   z-index: -1;
 }
+
+.pokemon-list .decoration-2 {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 55px;
+  height: 55px;
+  z-index: 500;
+  color: var(--white);
+  background: #697acf;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
