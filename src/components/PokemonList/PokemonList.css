@@ -1,0 +1,86 @@
+.pokemon-list {
+  position: relative;
+}
+
+.pokemon-list .title {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pokemon-list .list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 130px;
+  gap: 1rem;
+}
+
+.pokemon-list .pokemon-item {
+  --background1: var(--green);
+  --background2: var(--green2);
+  position: relative;
+  background-color: var(--background1);
+  color: var(--white);
+  border-radius: 1rem;
+  padding: 1.2rem 1rem;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.pokemon-list .pokemon-item.red {
+  --background1: var(--red);
+  --background2: var(--red2);
+}
+
+.pokemon-list .pokemon-item.blue {
+  --background1: var(--blue);
+  --background2: var(--blue2);
+}
+
+.pokemon-list .pokemon-item.yellow {
+  --background1: var(--yellow);
+  --background2: var(--yellow2);
+}
+
+.pokemon-list .pokemon-item:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-list .pokemon-item h3 {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.pokemon-list .pokemon-types {
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pokemon-list .pokemon-types .pokemon-type {
+  display: block;
+  background-color: var(--background2);
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+}
+
+.pokemon-list .pokemon-item img {
+  width: 70px;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.pokemon-list .decoration-1 {
+  position: absolute;
+  top: -130px;
+  right: -145px;
+  opacity: 0.4;
+  transform: scale(0.5) rotate(180deg);
+  z-index: -1;
+}
