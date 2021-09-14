@@ -1,7 +1,7 @@
-import React from 'react'
-import { PokemonProvider } from './contexts/PokemonContext'
+import React from "react"
+import { PokemonProvider } from "./contexts/PokemonContext"
 
-import PokemonList from './components/PokemonList/PokemonList'
+import PokemonList from "./components/PokemonList/PokemonList"
 
 const App = () => {
   return (
